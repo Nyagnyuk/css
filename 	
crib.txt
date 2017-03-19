@@ -1,0 +1,126 @@
+/* Центрирование по горизонтали: */
+/* 1. Блочное центрирование при фиксированной ширине элемента */
+.child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 2. Абсолютное центрирование. translate */
+.child {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 3. Абсолютное центрирование. calc */
+.child {
+  width: 150px;
+  position: absolute;
+  left: calc(50% - 75px);
+}
+
+/* 4. Абсолютное центрирование. margin */
+.child {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-left: -50px;
+}
+
+/* 5. Центрирование inline и inline-* элементов */
+.parent {
+  display: block;
+}
+
+.child {
+  text-align: center;
+}
+
+/* 6. Flexbox */
+.parent {
+  display: flex;
+  justify-content: center;	
+}
+
+
+/* Центрирование по вертикали: */
+/* 1. Центрирование текста с помощью line-height */
+.child {
+  height: 150px;
+  line-height: 150px;
+  white-space: nowrap;
+}
+
+/* 2. Центрирование многострочного текста с помощью таблиц */
+.parent {
+  display: table;
+}	
+.child {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* 3. Flexbox */
+.child {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* 4. Элемент-призрак при котором размеры не известны */
+.parent {
+  position: relative;
+}
+.parent::before {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  width: 1%;
+  vertical-align: middle;
+}
+.child {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 5. Центрирование маргином */
+.child {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-top: -50px; /* учитывайте поля и границы, если не используете box-sizing: border-box; */
+}
+
+/* 6. Если высота не известна */
+.child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Полное центрирование: */
+/* 1. Если у элемента фиксированные размеры */
+.child {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
+}
+
+/* 2. Если у элемента неизвестные размеры */
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 3. Flexbox */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
