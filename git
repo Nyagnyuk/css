@@ -1,0 +1,68 @@
+1. На свой dev 
+	  git status
+2. Если что-то есть (типа error_log)
+	  git clean -f
+3. git status -> чисто
+4. git checkout master  -> проверяем, что мы на ветке master
+5. git status
+   git pull origin master
+6.(master) -> создаем ветку со № своей задачи
+	git checkout -b MC-****
+7.  Проверяем изменения в Sourcetree
+8.(MC-****) git status
+			git add .
+			git status
+			git commit -m "MC-**** change design"
+			git push origin MC-****
+9.  Переходим на ветку master
+			git checkout master
+(master)	git pull --all(забираем все ветки себе)
+			git checkout dev (переходим на dev)
+(dev)		git pull origin dev
+(dev)		git merge MC-****    :q!
+			git push origin dev
+10. Иду на сервер
+			ssh root...
+			sudo su - ....
+			cd public...
+			git pull origin dev
+11. В таске MC-****  check please on the dev -> переводим задачу на репортера -> проверяем на dev
+12. Когда есть deploy ready -> создаем СС
+		Project: Change Control
+		Summary: берем из названия таска MC-****	
+		Assigne: assigne to me
+13. Идем MC-****
+		ищем на gitlabe последнюю СС и берем от туда description
+		Правим:
+			Deploy Change: название таска
+			Next branches: MC-****
+			What system: gogvo... meetcheap.....
+			Local Preparations:  --squash MC-****
+								 "m.deploy MC-****
+14. Task MC-**** заполняем желтую таблицу
+	gogvo...|true| | | MC-****|
+15. Консоль
+(dev)   	git checout master
+(master)	git status
+			git pull orirgin master
+			git checkout -b CC-**** (создаем новую СС)
+(CC-****)   git merge MC-****
+			git push origin CC-****  (:q!)
+			
+			Отдаю на проверку Ире,в СС-**** (please, approved)
+			approved!!!
+			git checkout master
+(master)    git status
+			git merge --squash CC-**** (и далее как в discription CC-****)
+			git status
+			git commit -m "master deploy CC-****"
+			git push origin master 
+			
+16. СС-**** в коментариях -> Local Preparations done -> возвращаем задачу
+17. Админам -> CC-****
+18. Проверяю на live
+19. CC-****  ->  Accepted - Deploymed ready - Done - Close
+20. MC-****  ->  Done, please check on the live -> перевожу задачу				
+	
+		
+	
