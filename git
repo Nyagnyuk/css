@@ -62,7 +62,45 @@
 17. Админам -> CC-****
 18. Проверяю на live
 19. CC-****  ->  Accepted - Deploymed ready - Done - Close
-20. MC-****  ->  Done, please check on the live -> перевожу задачу				
+20. MC-****  ->  Done, please check on the live -> перевожу задачу
+
+
+
+/******конфликт******/
 	
-		
+GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (dev)
+$ git merge GOGVO-1605
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+
+GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (dev|MERGING)
+$ git status
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   index.html
+
+Идем в Phpstorm ->  решаем, что оставляем 
+
+GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (dev|MERGING)
+$ git add .
+
+GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (dev|MERGING)
+$ git commit -m "resolved conflicts"
+[dev 9c2dfb9] resolved conflicts
+
+GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (dev)
+$ git push origin dev
+
+
+GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (dev)
+$ ssh root@71.40.108.244
+
+
+
+
+
+
+	
 	
