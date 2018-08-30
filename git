@@ -96,7 +96,10 @@ $ git push origin dev
 
 GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (dev)
 $ ssh root@71.40.108.244
-
+cd /home/devgvoacademy`
+`sudo su - devgvoacademy`
+`cd public_html`
+`git pull origin dev
 
 
 
