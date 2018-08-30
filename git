@@ -100,6 +100,9 @@ $ ssh root@71.40.108.244
 
 
 
+GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (master)
+$  git rm -r --cached GoMobile/   -удаление
+
 
 
 	
