@@ -1,0 +1,13 @@
+//замена стандартного сообщения при чекбоксе
+
+<div class="checkbox">
+  <label>
+    <input type="checkbox" required oninvalid="this.setCustomValidity(' Önnek hozzá kell járulnia, ha folytatni kívánja.')" onchange="this.setCustomValidity('')">Megismertem, és elfogadom az <a href="https://www.pureleverage.com/hu/privacy-policy/" target="_blank"><strong>Adatvédelmi tájékoztatót</strong></a>, és a
+    <a href="https://www.pureleverage.com/pl-legal-page/#gdpr" target="_blank"><strong>Felhasználási feltételeket</strong></a>
+  </label>
+</div>
+            
+ //перенос в таблице содержимого
+ 
+word-wrap: break-word;
+width: calc(100% - 50px);
