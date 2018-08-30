@@ -102,6 +102,10 @@ cd /home/devgvoacademy`
 `git pull origin dev
 
 
+Откатить мерж
+$ git reset --hard HEAD
+HEAD is now at 741caab Merge branch 'GOGVO-1605' into dev
+
 
 GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (master)
 $  git rm -r --cached GoMobile/   -удаление
