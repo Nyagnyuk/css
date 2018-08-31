@@ -156,3 +156,4 @@ remote: Counting objects: 197, done.    --- :q!
 	
 	
 	
+history |grep git
