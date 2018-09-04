@@ -11,3 +11,24 @@
  
 word-wrap: break-word;
 width: calc(100% - 50px);
+
+//иконка внутри input
+
+<label for="mail">Enter your Best Email</label>
+<div class="inner-addon left-addon">
+  <i class="fa fa-envelope" aria-hidden="true"></i>
+  <input type="text" name="Email" id="mail" value="Enter Your Email">
+</div>
+
+.inner-addon {
+  position: relative;
+}
+.inner-addon .fa {
+  position: absolute;
+  padding: 16px 10px 17px;
+  pointer-events: none;
+  font-size: 18px;
+  color: #878787;
+}
+.left-addon .fa  { left:  0px;}
+.left-addon input  { padding-left:  40px; }          
