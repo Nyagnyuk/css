@@ -1,0 +1,11 @@
+//modal
+для 767 добавляем в стилях #myModal{
+ pos:fixed;
+  background-color: rgba(0,0,0,0.52);
+}
+
+
+//для скрыти поля в форме в html блоке 
+<div class="form-group">
+<input type="hidden" required="" placeholder="Enter Your Name" id="name" name="FullName" value="Friend" class="form-control t-input">
+</div>
