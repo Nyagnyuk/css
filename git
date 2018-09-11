@@ -81,7 +81,8 @@ Unmerged paths:
 
         both modified:   index.html
 
-Идем в Phpstorm ->  решаем, что оставляем 
+Идем в Phpstorm ->  решаем, что оставляем  Merge->(слева -это дев ,все, что зеленое добавляем >>, справа изменения ветки-красным,
+посредине что получаем:))->Aplya
 
 GVOuser@DESKTOP-4GLMPBP MINGW64 /d/dockers/dockers/www/gvoconf/devgvoacademy/public_html (dev|MERGING)
 $ git add .
