@@ -49,3 +49,43 @@ i{
                         color: #fff;
                         line-height: 44px;
                 }
+
+
+//два бордера вокруг элемента
+  //прозразный один
+  .list .fa, .list .fas{
+  display: inline-block;
+  width: 92px;
+  height: 92px;
+  background-color: #f66301;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  line-height: 90px;
+  position: relative;
+}
+.list .fa:before, .list .fas:before{
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 50%;
+  border: 2px solid #f66301;
+}
+//непрозрачный
+ul .fa, ul .fas {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #f66301;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #f66301;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    line-height: 48px;
+    margin-right: 7px;
+}
