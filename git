@@ -49,7 +49,7 @@
 (CC-****)   git merge MC-****
 			git push origin CC-****  (:q!)
 			
-			Отдаю на проверку Ире,в СС-**** (please, approved)
+			Отдаю на проверку Ире,в СС-**** (please, approve)
 			approved!!!
 			git checkout master
 (master)    git status
