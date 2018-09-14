@@ -73,6 +73,7 @@ i{
   right: -5px;
   border-radius: 50%;
   border: 2px solid #f66301;
+  //content:"";
 }
 //непрозрачный
 ul .fa, ul .fas {
