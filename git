@@ -161,3 +161,45 @@ history |grep git
 
 on:dev: msgfmt -v locale/es/LC_MESSAGES/main.po -o locale/es/LC_MESSAGES/main.mo	
 msgfmt -v web/locale/es/LC_MESSAGES/main.po -o web/locale/es/LC_MESSAGES/main.mo
+
+
+
+//сервер
+
+GVOuser@DESKTOP-4GLMPBP MINGW64 ~
+$ ssh root@localhost
+root@localhost's password:
+[root@localhost ~]# docker ps      //здесь мы смотрим какой Php 
+CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                                                    NAMES
+6a990f4f6459        mnt_centos7_php56_httpd24   "/usr/sbin/init"         12 days ago         Up About an hour    10.0.3.15:80->80/tcp, 10.0.3.15:443->443/tcp, 4730/tcp   mnt_centos7_php56_httpd24_1
+94ff1ff554f8        mnt_centos7_php53_httpd24   "/usr/sbin/init"         12 days ago         Up About an hour    10.0.3.15:888->80/tcp, 10.0.3.15:444->443/tcp            mnt_centos7_php53_httpd24_1
+b607bd2f81ad        mnt_ubuntu_php72            "/usr/local/bin/run"     12 days ago         Up About an hour    10.0.4.15:80->80/tcp, 10.0.4.15:443->443/tcp             mnt_ubuntu_php72_1
+4c03cfea2f2f        mariadb:10.1                "docker-entrypoint.s…"   12 days ago         Up About an hour    10.0.3.15:3306->3306/tcp                                 mnt_mysql_1
+[root@localhost ~]# cd /home/gvo/mnt/
+[root@localhost mnt]# ls -la
+total 2177809
+drwxrwxrwx  1 gvo root       4096 Aug 20 08:11 .
+drwx------. 4 gvo gvo         122 Jun  6 00:46 ..
+-rwxrwxrwx  1 gvo root       2058 Aug 14 07:13 docker-compose.yml
+drwxrwxrwx  1 gvo root          0 Jul 23 12:10 gearman
+drwxrwxrwx  1 gvo root          0 Jul 23 12:10 multi_php_centos7
+drwxrwxrwx  1 gvo root          0 Aug 16 11:47 mysql_mariadb10.1
+-rwxrwxrwx  1 gvo root 2230061597 Aug 20 07:44 mysql.tar.gz
+drwxrwxrwx  1 gvo root          0 Jul 23 12:10 php53-apache22-centos
+drwxrwxrwx  1 gvo root          0 Jul 23 12:10 php-53-centos7
+drwxrwxrwx  1 gvo root          0 Jul 23 12:10 php-56-centos7
+drwxrwxrwx  1 gvo root          0 Jul 23 12:10 php-56-centos7_2
+drwxrwxrwx  1 gvo root          0 Jul 23 12:10 php-72-centos7
+drwxrwxrwx  1 gvo root          0 Jul 26 11:33 php-72-ubuntu18.04
+-rwxrwxrwx  1 gvo root         17 Jul 24 06:54 test
+drwxrwxrwx  1 gvo root       4096 Sep  6 04:28 www
+
+
+[root@localhost mnt]# cat docker-compose.yml     // в этом файле смотрим какой проект к какому centos  - относиться
+
+[root@localhost mnt]# docker exec -it 94ff1ff554f8 bash
+
+[root@94ff1ff554f8 /]# cd /home/devgotbackup/public_html/
+ -o locale/ru_RU/LC_MESSAGES/prelaunch.mov locale/ru_RU/LC_MESSAGES/prelaunch.po
+/*************************************************************************************************/
+
