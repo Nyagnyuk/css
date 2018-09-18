@@ -90,3 +90,7 @@ ul .fa, ul .fas {
     line-height: 48px;
     margin-right: 7px;
 }
+
+
+//перенос при необходимости
+&shy;
