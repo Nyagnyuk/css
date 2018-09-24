@@ -94,3 +94,7 @@ ul .fa, ul .fas {
 
 //перенос при необходимости
 &shy;
+
+
+//Automatic Copyright Year
+&copy; <?php echo date("Y"); ?>
