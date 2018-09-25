@@ -159,6 +159,8 @@ remote: Counting objects: 197, done.    --- :q!
 	
 history |grep git
 
+
+po->> mo
 on:dev: msgfmt -v locale/es/LC_MESSAGES/main.po -o locale/es/LC_MESSAGES/main.mo	
 msgfmt -v web/locale/es/LC_MESSAGES/main.po -o web/locale/es/LC_MESSAGES/main.mo
 
