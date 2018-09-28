@@ -95,6 +95,13 @@ ul .fa, ul .fas {
 //перенос при необходимости
 &shy;
 
+//если необходим бордер , то добавляем какой-то wrapper и ему даем бордер
+<div class="embed-wrapper">
+          <div class="embed-responsive embed-responsive-16by9 video">
+            <iframe  src="https://www.gvovideo.com/v2.php?v=uj3W2I3L4fB" class="embed-responsive-item" allowfullscreen="" id="iframe"></iframe>
+          </div>
+        </div>
+
 
 //Automatic Copyright Year
 &copy; <?php echo date("Y"); ?>
