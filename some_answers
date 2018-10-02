@@ -105,3 +105,12 @@ ul .fa, ul .fas {
 
 //Automatic Copyright Year
 &copy; <?php echo date("Y"); ?>
+
+//дергается экрани при модальном окне: Bootstrap
+html {
+        overflow-y: scroll;
+}
+body{
+       
+        padding-right: 0!important;
+}
