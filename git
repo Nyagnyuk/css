@@ -171,6 +171,11 @@ msgfmt -v web/locale/es/LC_MESSAGES/main.po -o web/locale/es/LC_MESSAGES/main.mo
 GVOuser@DESKTOP-4GLMPBP MINGW64 ~
 $ ssh root@localhost
 root@localhost's password:
+
+[root@localhost ~]# docker exec -it 6a990f4f6459 msgfmt -v /home/gogvo/public_html/locale/ru/LC_MESSAGES/affiliates.po -o /home/gogvo/public_html/locale/ru/LC_MESSAGES/affiliates.mo
+
+
+
 [root@localhost ~]# docker ps      //здесь мы смотрим какой Php 
 CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                                                    NAMES
 6a990f4f6459        mnt_centos7_php56_httpd24   "/usr/sbin/init"         12 days ago         Up About an hour    10.0.3.15:80->80/tcp, 10.0.3.15:443->443/tcp, 4730/tcp   mnt_centos7_php56_httpd24_1
