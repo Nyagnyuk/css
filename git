@@ -210,3 +210,35 @@ drwxrwxrwx  1 gvo root       4096 Sep  6 04:28 www
  -o locale/ru_RU/LC_MESSAGES/prelaunch.mov locale/ru_RU/LC_MESSAGES/prelaunch.po
 /*************************************************************************************************/
 
+удаление ветки СС(сделаной от dev)
+
+если вдруг сделала уже:   git merge --squash CC-2495
+то удаляем: git reset --hard HEAD^
+
+
+далее удаляем саму ветку
+
+
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git push origin --delete CC-2495
+To gitlab.gvodatacenter.com:gvo-development/gogvo-sa.git
+ - [deleted]             CC-2495
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git branch -d CC-2495
+error: The branch 'CC-2495' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D CC-2495'.
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git branch -D CC-2495
+Deleted branch CC-2495 (was f121ddc4f).
+
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git status
+
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git pull origin master
+
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git pull --all
+
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git branch
+
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git checkout CC-2495
+error: pathspec 'CC-2495' did not match any file(s) known to git.
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git checkout -b CC-2495
+
+
+
