@@ -241,4 +241,10 @@ error: pathspec 'CC-2495' did not match any file(s) known to git.
 natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git checkout -b CC-2495
 
 
+/*****************************************************************************************************/
+Локально сделать переводы
+
+natasha@GvoHPbook ~ $ sudo docker exec -it 8a7dd0709973 msgfmt -v /home/gogvo/public_html/locale/ru/LC_MESSAGES/affiliates.po -o /home/gogvo/public_html/locale/ru/LC_MESSAGES/affiliates.mo
+[sudo] password for natasha: 
+3076 translated messages, 1 untranslated message.
 
