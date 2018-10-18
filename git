@@ -248,3 +248,9 @@ natasha@GvoHPbook ~ $ sudo docker exec -it 8a7dd0709973 msgfmt -v /home/gogvo/pu
 [sudo] password for natasha: 
 3076 translated messages, 1 untranslated message.
 
+/****************************************************************************************************/
+git checkout -- .
+
+это отмена не индексированых изменений
+т.е. ты что-то поменяла и до выполнения команды `git add .`, этой командой мы можем отменить изменения
+1го или нескольких файлов)
