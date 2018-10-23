@@ -9,3 +9,8 @@
 <div class="form-group">
 <input type="hidden" required="" placeholder="Enter Your Name" id="name" name="FullName" value="Friend" class="form-control t-input">
 </div>
+
+
+//кнопка для модального окна , чтоб был перенос слов в кнопке 
+
+white-space: normal;
