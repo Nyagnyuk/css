@@ -22,6 +22,14 @@
 (dev)		git merge MC-****    :q!
 			git push origin dev
 10. Иду на сервер
+
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (dev) $ ssh root@newdev.gogvo.com 
+[root@newdev ~]# sudo su - gogvo
+[gogvo@newdev ~]$ cd public_html/
+[gogvo@newdev public_html]$ git pull origin dev
+
+
+
 			ssh root...
 			sudo su - ....
 			cd public...
