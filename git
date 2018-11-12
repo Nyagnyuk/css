@@ -60,11 +60,28 @@ natasha@GvoHPbook ~/Work/dockers/www/gogvo (dev) $ ssh root@newdev.gogvo.com
 			Отдаю на проверку Ире,в СС-**** (please, approve)
 			approved!!!
 			git checkout master
-(master)    git status
+			
+(master)    		git status
+			git pull origin master
 			git merge --squash CC-**** (и далее как в discription CC-****)
 			git status
 			git commit -m "master deploy CC-****"
 			git push origin master 
+			
+			
+			natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git push origin master
+To gitlab.gvodatacenter.com:gvo-development/gogvo-sa.git
+ ! [rejected]            master -> master (fetch first)
+error: failed to push some refs to 'git@gitlab.gvodatacenter.com:gvo-development/gogvo-sa.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git pull origin master
+remote: Counting objects: 7, done.
+
+			
 			
 16. СС-**** в коментариях -> Local Preparations done -> возвращаем задачу
 17. Админам -> CC-****
