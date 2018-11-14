@@ -279,3 +279,46 @@ git checkout -- .
 это отмена не индексированых изменений
 т.е. ты что-то поменяла и до выполнения команды `git add .`, этой командой мы можем отменить изменения
 1го или нескольких файлов)
+/****************************************************************************************************/
+natasha@GvoHPbook ~/Work/dockers/www/gvoconf/devmyownmeeting/public_html (dev) $ ssh root@dev.myownmeeting.com
+The authenticity of host 'dev.myownmeeting.com (71.40.108.244)' can't be established.
+ECDSA key fingerprint is SHA256:atYEivnaDr+fRdH+Els3cIWw8FCjgoN5RHteEx+aP3s.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'dev.myownmeeting.com' (ECDSA) to the list of known hosts.
+Last login: Wed Nov 14 07:21:11 2018 from 178.151.40.243
+[root@gvo108244 ~]# sudo su - devmyownmeet
+su: user devmyownmeet does not exist
+[root@gvo108244 ~]# ls -la /home/
+total 8
+drwxr-xr-x. 24 root             root             4096 Jun  6 06:46 .
+dr-xr-xr-x. 17 root             root              242 Nov 14 02:01 ..
+drwxr-x---.  3 devfanpagesystem devfanpagesystem   81 Jun  5 03:50 devfanpagesystem
+drwx------.  3 devfiberchalleng devfiberchalleng   81 Jun  5 03:50 devfiberchalleng
+drwx------.  3 devfreemarket    devfreemarket      81 Jun  5 05:20 devfreemarket
+drwx------.  4 devgotbackup     devgotbackup      130 Sep 17 04:22 devgotbackup
+drwx------.  4 devgvoacademy    devgvoacademy     114 Jun 26 08:18 devgvoacademy
+drwx------.  7 devgvoconf       devgvoconf        173 Aug 16 04:31 devgvoconf
+drwx------.  3 devgvopolska     devgvopolska       81 Jun  5 03:50 devgvopolska
+drwx------.  4 devgvovideo      devgvovideo       130 Jun  8 08:36 devgvovideo
+drwx------.  4 devhostt         devhostt          148 Jul 17 08:12 devhostt
+drwx------.  3 devhotco         devhotco          118 Jun 11 07:24 devhotco
+drwx------.  3 devinstantcom    devinstantcom      81 Jun  5 04:29 devinstantcom
+drwx------.  3 devinstantinnet  devinstantinnet    81 Jun  5 04:28 devinstantinnet
+drwx------.  3 devlocal         devlocal           81 Jun  5 03:50 devlocal
+drwx------.  4 devmeetc         devmeetc          130 Sep  5 05:27 devmeetc
+drwx------.  4 devmyownmeeting  devmyownmeeting   148 Jun 20 02:48 devmyownmeeting
+drwx------.  3 devmypre         devmypre           81 Jun  5 04:47 devmypre
+drwx------.  4 devpurl          devpurl           170 Oct 10 07:58 devpurl
+drwx------.  3 devrelia         devrelia           81 Jun  5 03:50 devrelia
+drwx------.  3 devsecretprelaun devsecretprelaun   81 Jun  5 03:50 devsecretprelaun
+drwx------.  3 devstopthehype   devstopthehype     81 Jun  5 04:29 devstopthehype
+drwx------.  3 devtestimonial   devtestimonial     81 Jun  5 03:50 devtestimonial
+drwx------.  3 devwebinaralived devwebinaralived   81 Jun  5 03:50 devwebinaralived
+-rw-r--r--.  1 root             root              584 Jun  5 03:31 list
+
+смотрим как называется юзер и берем его
+
+[root@gvo108244 ~]# sudo su - devmyownmeeting
+Last login: Tue Jun 19 06:41:17 CDT 2018 on pts/1
+[devmyownmeeting@gvo108244 ~]$ cd public_html/
+[devmyownmeeting@gvo108244 public_html]$ git pull origin dev
