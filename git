@@ -261,6 +261,12 @@ natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git pull --all
 
 natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git branch
 
+/****************************************************************************************/
+ В CC-5555 для gvo
+ 
+  msgfmt -v web/locale/es/LC_MESSAGES/affiliates.po -o web/locale/es/LC_MESSAGES/affiliates.mo
+ msgfmt -v web/locale/ru/LC_MESSAGES/affiliates.po -o  web/locale/ru/LC_MESSAGES/affiliates.mo
+
 natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git checkout CC-2495
 error: pathspec 'CC-2495' did not match any file(s) known to git.
 natasha@GvoHPbook ~/Work/dockers/www/gogvo (master) $ git checkout -b CC-2495
