@@ -13,3 +13,9 @@
 
 //кнопка для модального окна , чтоб был перенос слов в кнопке 
 white-space: normal;
+
+
+//background картинки под текстом
+background: url(../img/pic.png)50% 50%;
+-webkit-background-clip: text;
+-weblit-text-color: transparent;
