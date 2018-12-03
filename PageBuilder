@@ -15,7 +15,7 @@
 white-space: normal;
 
 
-//background картинки под текстом
+//background картинки под текстом -поддержка не всех браузеров -нет firefox
 background: url(../img/pic.png)50% 50%;
 -webkit-background-clip: text;
 -weblit-text-color: transparent;
