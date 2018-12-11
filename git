@@ -328,3 +328,19 @@ drwx------.  3 devwebinaralived devwebinaralived   81 Jun  5 03:50 devwebinarali
 Last login: Tue Jun 19 06:41:17 CDT 2018 on pts/1
 [devmyownmeeting@gvo108244 ~]$ cd public_html/
 [devmyownmeeting@gvo108244 public_html]$ git pull origin dev
+
+/***************************************/
+//удаление ветки локально и удаленно
+natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git push origin --delete CC-2649
+To gitlab.gvodatacenter.com:gvo-development/gvo-faq.git
+ - [deleted]         CC-2649
+natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git branch -D CC-2649
+Deleted branch CC-2649 (was 69b7cc5).
+
+natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git pull --all
+natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git status
+natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git branch
+
+
+
+
