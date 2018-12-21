@@ -341,6 +341,11 @@ natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git pull --
 natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git status
 natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git branch
 
+/*********************************************/
+для pulereverage в хостах убираем # и тогда дев будет смотреть на локал и можно все менять
 
+ssh root@71.40.108.244
+
+после чтоб дев опять смотрел на дев делаем пинг ping dev.pureleverage.com и тогде оно точно смотрит туда куда надо 
 
 
