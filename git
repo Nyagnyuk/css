@@ -286,6 +286,13 @@ git checkout -- .
 т.е. ты что-то поменяла и до выполнения команды `git add .`, этой командой мы можем отменить изменения
 1го или нескольких файлов)
 /****************************************************************************************************/
+
+если добавил лишние файлы командой `git add .` то удаляе каждый файл
+
+git reset HEAD web/traffic/thankyou/error_log
+
+/****************************************************************************************************/
+
 natasha@GvoHPbook ~/Work/dockers/www/gvoconf/devmyownmeeting/public_html (dev) $ ssh root@dev.myownmeeting.com
 The authenticity of host 'dev.myownmeeting.com (71.40.108.244)' can't be established.
 ECDSA key fingerprint is SHA256:atYEivnaDr+fRdH+Els3cIWw8FCjgoN5RHteEx+aP3s.
