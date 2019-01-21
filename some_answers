@@ -114,3 +114,25 @@ body{
        
         padding-right: 0!important;
 }
+/********************************************/
+установление счетчика , как при ul<li
+
+body{
+		counter-reset: place-counter;        
+                                 
+	}
+	.contestNum{
+		position: relative;
+		padding-left: 30px;
+	}
+	.contestNum-cover::before {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    counter-increment: place-counter;
+    content: counter(place-counter) ". ";
+    text-align: center;
+    top: 0px;
+    left: 10px;
+}
