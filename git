@@ -354,5 +354,20 @@ natasha@GvoHPbook ~/Work/dockers/www/gvotools/public_html (master) $ git branch
 ssh root@71.40.108.244
 
 после чтоб дев опять смотрел на дев делаем пинг ping dev.pureleverage.com и тогде оно точно смотрит туда куда надо 
+/***********************************************/
+NLS - удаление error files
+
+
+natasha@GvoHPbook ~/Work/dockers/www/nls (SMW-2079) $ git checkout dev
+error: The following untracked working tree files would be overwritten by checkout:
+        web/members/new_design/error_log
+Please move or remove them before you switch branches.
+Aborting
+
+natasha@GvoHPbook ~/Work/dockers/www/nls (SMW-2079) $ rm web/members/new_design/error_log
+rm: remove write-protected regular file 'web/members/new_design/error_log'? yes
+natasha@GvoHPbook ~/Work/dockers/www/nls (SMW-2079) $ git status
+On branch SMW-2079
+nothing to commit, working tree clean
 
 
