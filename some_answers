@@ -171,4 +171,19 @@ body{
     transform: skewY(-50deg);
 }
 /****************************************************/
+// в нумерованом списке делаем круглую скобку
 
+ <ol class="partners-list">
+   <li>1)</li>   
+  </ol>
+  
+  ol.partners-list {
+    counter-reset: myCounter;
+    list-style: none;
+  }
+
+  ol.partners-list > li::before {
+    content: counter( myCounter ) ') ';
+    counter-increment: myCounter;
+  }
+/****************************************************/
