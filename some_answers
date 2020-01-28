@@ -187,3 +187,8 @@ body{
     counter-increment: myCounter;
   }
 /****************************************************/
+Атрибут на отлючение большиз букв
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autocapitalize
+
+autocapitalize="off"
