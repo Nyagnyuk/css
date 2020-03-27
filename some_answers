@@ -192,3 +192,7 @@ body{
 https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autocapitalize
 
 autocapitalize="off"
+
+/****************************************************/
+
+box-shadow: 1px 0 0 9999px rgba(0, 0, 0, .7) inset;
