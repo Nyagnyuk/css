@@ -30,6 +30,10 @@
 			.all {
 				box-shadow: 0 0 5px #333;
 			}
+			
+			//двойная рамка
+			box-shadow: 0 0 0 6px #fff, 0 0 0 12px #888;
+
 		</style>
 	</head>
 	<body>
