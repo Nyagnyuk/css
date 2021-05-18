@@ -1,0 +1,13 @@
+ $self: &;
+ 
+ 
+ #{$self} {
+   &__img{
+     height: 100%;
+   }
+ }
+
+#{$self}__actions-button {
+   opacity: 1;
+   visibility: visible;
+ }
