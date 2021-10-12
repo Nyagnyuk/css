@@ -196,3 +196,22 @@ autocapitalize="off"
 /****************************************************/
 
 box-shadow: 1px 0 0 9999px rgba(0, 0, 0, .7) inset;
+
+/****************************************************/
+select2 -> опция апендить дроп в один блок с самим селектом
+
+let select2Footer = jQuery(".country__select"),
+   selectorParent = select2Footer.parent();
+
+select2Footer.select2({
+   minimumResultsForSearch: Infinity,
+   templateResult: formatState,
+   templateSelection: formatState,
+   dropdownParent: selectorParent
+});
+
+
+
+
+
+/****************************************************/
